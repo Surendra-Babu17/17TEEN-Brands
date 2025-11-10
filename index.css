@@ -178,7 +178,7 @@ footer{
 }
 
 /* 📱 Mobile (≤599px) */
-@media (max-width: 599px) {
+@media (max-width: 480px) {
   .container {
     flex-direction: column;
     align-items: center;
@@ -324,7 +324,7 @@ footer{
 }
 
 /* Mobile phones */
-@media (max-width: 599px) {
+@media (max-width: 480px) {
   .container { width: calc(100% - 32px); flex-direction: column; align-items: center; gap: 14px; }
   /* nav links stack vertically as rows (row-wise) */
   .nav-links {
