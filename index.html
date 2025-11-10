@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>17TEEN BRAND WEARS</title>
+  <link rel="icon" type="image/x-icon" href="./Project images/logo.png">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+  <!-- Navbar -->
+ <body>
+
+
+    <nav class="navbar">
+      <div class="container">
+        <a href="./index.html" class="logo" style="font-family: Georgia, 'Times New Roman', Times, serif; margin-left: 30px;"><span style="color: black;">17</span>TEEN
+          <span style="color: rgb(16, 14, 14);"> Brands</span></a>
+
+        <ul class="nav-links" id="primary-navigation">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="#our-products">Shop</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./touch.html">Contact</a></li>
+          <li><a href="#"><img src="./Project images/user.png" width="25" class="log" alt="user"></a></li>
+          <li>
+            <a href="./cart.html">
+              <img src="./Project images/grocery-store.png" width="25" class="log" alt="cart">
+              <ul id="cart-items"></ul>
+
+            </a>
+          </li>
+
+
+      </div>
+    </nav>
+
+    <nav class="navbar2">
+      <div class="container" style="position: absolute;">
+        <marquee>
+          <ul class="nav-links">
+
+            <li><a>Today's Deal</a></li>
+            <li><a>Mens wear</a></li>
+            <li><a>Womens wear</a></li>
+            <li><a>Festival collections</a></li>
+            <li><a>Customer service</a></li>
+
+
+
+          </ul>
+
+        </marquee>
+      </div>
+    </nav>
+
+    <!-- Modern marquee (row-wise single-line, pause on hover) -->
+    <section class="hero-slider">
+
+      <div class="slide" style="background-image: url('./childwear/w3.gif');"></div>
+    </section>
+
+
+    <!-- Latest Products -->
+    <section class="products">
+      <div class="latest-view">
+        <h2>Latest Men's Products</h2>
+        <a href="#" class="view-all">VIEW ALL PRODUCTS</a>
+      </div>
+
+
+      <!-- MENS WEAR -->
+      <div class="cards" id="our-products">
+        <div class="card" onclick="cart2()" data-id="1" data-name="Mens shirts" data-price="470"
+          data-text="checkit cart">
+          <!-- <a href="./mens.html"> -->
+          <img src="./mens wear/m21.jpg" alt=""></a>
+          <h3>Mens Shirts</h3>
+          <p class="price">₹470.00</p>
+          <p>Lorem ipsum dolor sit amet...</p>
+          <p class="review">★★★★★ Reviews (24)</p>
+
+
+        </div>
+
+        <div class="card" onclick="cart3()">
+          <!-- <a href="./mens.html"> -->
+          <img src="./mens wear/37.webp" alt=""></a>
+          <h3>Men Pants</h3>
+          <p class="price">₹470.00</p>
+          <p>Lorem ipsum dolor sit amet...</p>
+          <p class="review">★★★★★ Reviews (24)</p>
+
+        </div>
+        <div class="card" onclick="cart4()">
+          <!-- <a href="./mens.html"> -->
+          <img src="./mens wear/t10.jpg" alt=""></a>
+          <h3>Mens T-shirts</h3>
+          <p class="price">₹470.00</p>
+          <p>Lorem ipsum dolor sit amet...</p>
+          <p class="review">★★★★★ Reviews (24)</p>
+
+
+        </div>
+        <div class="card" onclick="cart5()">
+          <!-- <a href="./mens.html"> -->
+          <img src="./mens wear/w10.jpg" alt=""></a>
+          <h3>MEN-Woodies</h3>
+          <p class="price">₹470.00</p>
+          <p>Lorem ipsum dolor sit amet...</p>
+          <p class="review">★★★★★ Reviews (24)</p>
+
+
+        </div>
+        <div class="card" onclick="cart8()" id="cart1" style="size-adjust: initial;">
+          <!-- <a href="./shoes.html"> -->
+          <img src="./shoes wear/images (1).jpeg" alt=""></a>
+          <h3>Mens-Shoes</h3>
+          <p class="price">₹560.00</p>
+          <p>Lorem ipsum dolor sit amet...</p>
+          <p class="review">★★★★★ Reviews (24)</p>
+
+        </div>
+        <div class="card" onclick="cart()">
+
+          <img src="./Flip-flops/images (1).jpeg" alt="" width="100px" onclick="cart9()"></a>
+          <h3>Flip-Flops</h3>
+          <p class="price">₹190.00</p>
+          <p>Lorem ipsum dolor sit amet...</p>
+          <p class="review">★★★★★ Reviews (24)</p>
+
+        </div>
+        <div class="card" onclick="cart11()">
+
+          <img src="./childwear/s20.webp" alt="" width="100px"></a>
+          <h3>Mens Fashions wears</h3>
+          <p class="price">₹190.00</p>
+          <p>Lorem ipsum dolor sit amet...</p>
+          <p class="review">★★★★★ Reviews (24)</p>
+
+        </div>
+
+
+
+        <!--WOMENS WEAR  -->
+        <div class="card" onclick="cart13()">
+          <!-- <a href="./women.html"> -->
+          <img src="./childwear/sr1.webp" alt=""></a>
+          <h3>Women Sarees</h3>
+          <p class="price">₹340.00</p>
+          <p>Lorem ipsum dolor sit amet...</p>
+          <p class="review">★★★★★ Reviews (24)</p>
+
+        </div>
+
+        <div class="card" onclick="cart14()">
+          <!-- <a href="./jewellries.html"> -->
+          <img src="./childwear/wt1.webp" alt="" width="100px"></a>
+          <h3>Women Kurta & Chudidar</h3>
+          <p class="price">₹190.00</p>
+          <p>Lorem ipsum dolor sit amet...</p>
+          <p class="review">★★★★★ Reviews (24)</p>
+
+        </div>
+
+        <div class="card" onclick="cart15()">
+          <!-- <a href="./jacket.html"> -->
+          <img src="./childwear/wg1.webp" alt=""></a>
+          <h3>WOMEN T-shirts</h3>
+          <p class="price">₹250.00</p>
+          <p>Lorem ipsum dolor sit amet...</p>
+          <p class="review">★★★★★ Reviews (24)</p>
+
+        </div>
+        <div class="card" onclick="cart16()">
+          <!-- <a href="./jewellries.html"> -->
+          <img src="./childwear/c1.webp" alt="" width="100px"></a>
+          <h3>Women slipers& Flip flops</h3>
+          <p class="price">₹190.00</p>
+          <p>Lorem ipsum dolor sit amet...</p>
+          <p class="review">★★★★★ Reviews (24)</p>
+
+        </div>
+        <div class="card" onclick="cart17()">
+          <!-- <a href="./jewellries.html"> -->
+          <img src="./tshirts/images (2).jpeg" alt="" width="100px"></a>
+          <h3>T-shirts</h3>
+          <p class="price">₹190.00</p>
+          <p>Lorem ipsum dolor sit amet...</p>
+          <p class="review">★★★★★ Reviews (24)</p>
+
+        </div>
+    </section>
+
+
+
+    <!-- About Section -->
+    <section class="about">
+      <h2 style="font-family: Georgia, 'Times New Roman', Times, serif;">About 7TEEN BRANDS</h2>
+      <div class="about-content">
+        <div class="text">
+          <h3 style="color: rgb(19, 74, 164);">Looking for the best products?</h3><br>
+          <p><span style="color: rgb(19, 74, 164); font-weight: 700;">7TEEN BRANDS</span> is a modern online fashion
+            store
+            is a modern online fashion store
+            that brings together style, comfort, and affordability. We believe that fashion should website .<span><a
+                href="./touch.html" style="color:  rgb(19, 74, 164); color: red;">Contact Us</a></span> for more info.
+          </p>
+          <br><br>
+          <ul>
+            <li>Deliver stylish and comfortable clothing.</li><br>
+            <li>Provide an easy shopping experience.</li><br>
+            <li>Offer exclusive deals & offers.</li>
+          </ul>
+          <a class="btn" onclick="readmore()" >Read More</a>
+        </div>
+        <div class="image">
+          <img src="./Project images/feature-image.jpg" alt="About Image">
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="end">
+      <div class="footer-top">
+        <p><b style="color: rgb(5, 77, 132);">Creative & Unique Sixteen Products</b><br>
+       <span style="color: brown;">   At 7TEEN BRANDS, we believe fashion should be accessible, unique, and timeless.</span></p>
+
+      </div>
+    </footer>
+   
+
+    <!-- <p class="foot" style="color: aliceblue; background-color: black; margin-top: 0%; padding: 30px;">&copy; 2025 7TEEN
+      BRAND. All rights reserved. Created by <span style="color: red; text-align: center; margin-top: 10px;">Surendra
+        Babu.</span></p> -->
+        <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>© <span id="year"></span> Your Brand. All rights reserved.</p>
+      <div class="social">
+        <a aria-label="Twitter" href="https://surendra-babu17.github.io/RESPONSIVE-Protofolio/" style="color: rgb(223, 149, 11);">Protofolio</a>
+        <a aria-label="LinkedIn" href="https://www.linkedin.com/in/surendr-babu-gollapolu/" class="link">LinkedIn</a>
+        <a aria-label="GitHub" href="https://github.com/Surendra-Babu17" class="link">Github</a>
+      </div>
+    </div>
+  </footer>
+
+
+    <script src="main.js">
+
+
+
+
+
+    </script>
+  </body>
+
+</html>

@@ -1,0 +1,362 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #fff;
+  color: #333;
+}
+
+/* ---------------- NAVBAR ---------------- */
+.navbar {
+  background: rgb(226, 133, 40);
+  padding: 18px 0;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.navbar2{
+  color: #000;
+  background-color: #3d3939;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  flex-wrap: wrap; /* allows wrapping for smaller screens */
+}
+
+.logo {
+  color: #fff;
+  font-size: 29px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.log:hover{
+  cursor: pointer;
+  border-radius: 50%;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+/* Navigation links */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: black;
+}
+.mar{
+  display: flex;
+ 
+
+}
+.mar li a{
+  gap: 20px;
+  color: black;
+  
+}
+
+
+/* ---------------- HERO SECTION ---------------- */
+.hero-slider {
+  width: 100%;
+  height: 100vh;
+  background: #000;
+  overflow: hidden;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  text-align: center;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.item1-text1 {
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: red;
+}
+
+.item1-text2 {
+  font-size: 58px;
+  font-weight: bold;
+  color: white;
+  margin-top: 10px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: red;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+
+/* 🖥️ Desktop (≥1200px) */
+@media (min-width: 1200px) {
+  .container {
+    flex-wrap: nowrap;
+  }
+  .nav-links {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}
+
+/* 💻 Laptop (992px–1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .nav-links {
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 20px;
+  }
+  .item1-text2 { font-size: 48px; }
+}
+
+/* 📱 Tablet (600px–991px) */
+@media (min-width: 600px) and (max-width: 991px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-links {
+    flex-direction: row; /* keep in one line */
+    flex-wrap: wrap; /* allow links to wrap into multiple rows */
+    justify-content: center;
+    margin-top: 10px;
+    gap: 15px;
+  }
+  .item1-text1 { font-size: 22px; }
+  .item1-text2 { font-size: 38px; }
+}
+
+/* 📱 Mobile (≤599px) */
+@media (max-width: 599px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-links {
+    flex-direction: column; /* stack vertically */
+    align-items: center;
+    margin-top: 12px;
+    gap: 10px;
+  }
+  .logo { font-size: 22px; }
+  .item1-text1 { font-size: 18px; }
+  .item1-text2 { font-size: 28px; }
+  .hero-slider { height: 70vh; }
+}
+/* ------------------------- PRODUCTS (cards) ------------------------- */
+.products {
+  padding: 42px 24px;
+  max-width: var(--container-max);
+  margin: 0 auto 40px;
+}
+
+.latest-view {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.latest-view h2 { font-size: 22px; color: var(--text); }
+.view-all { color: var(--accent); font-weight: 700; text-decoration: none; }
+
+/* Cards grid (responsive) */
+.cards {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(4, 1fr); /* default desktop */
+}
+
+/* Card visuals */
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 14px;
+  box-shadow: var(--card-shadow);
+  transition: transform .22s ease, box-shadow .22s ease;
+  cursor: pointer;
+  overflow: hidden;
+}
+.card:hover { transform: translateY(-6px); box-shadow: 0 20px 48px rgba(16,24,40,0.08); }
+
+.card img {
+  width: 100%;
+  height: 220px;      /* consistent card image height */
+  object-fit: cover;  /* crop nicely while preserving aspect */
+  border-radius: 8px;
+  display: block;
+}
+
+.card h3 {
+  margin-top: 12px;
+  font-size: 16px;
+  color: var(--text);
+}
+
+.card .price {
+  font-weight: 800;
+  margin: 8px 0;
+  color: #111;
+}
+
+.card p { color: var(--muted); font-size: 14px; margin: 6px 0; }
+
+.card .review {
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 13px;
+}
+
+/* ------------------------- ABOUT / FOOTER ------------------------- */
+.about {
+  padding: 48px 24px;
+  max-width: var(--container-max);
+  margin: 0 auto;
+}
+.about-content {
+  display: flex;
+  gap: 28px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.about .text, .about .image { flex: 1 1 320px; }
+.about img { width: 100%; border-radius: 12px; display: block; }
+
+.end {
+  background: #f4f4f4;
+  padding: 36px 24px;
+  margin-top: 24px;
+}
+.footer-top { display:flex; gap: 18px; align-items:center; justify-content:space-between; flex-wrap:wrap; }
+.btn2 { background: var(--accent); color:#fff; padding:10px 18px; border-radius:10px; border: none; font-weight:700; }
+.foot { margin-top: 18px; text-align:center; color:var(--muted); font-size:14px; }
+
+/* ------------------------- Responsive Breakpoints ------------------------- */
+
+/* Large desktop: make cards denser if needed */
+@media (min-width: 1400px) {
+  .cards { grid-template-columns: repeat(6, 1fr); gap: 22px; }
+  .hero-slider { min-height: 100vh; }
+}
+
+/* Desktop / large laptop */
+@media (min-width: 992px) and (max-width: 1399px) {
+  .cards { grid-template-columns: repeat(6, 1fr); }
+  .container { width: calc(100% - 64px); }
+  .overlay { padding: 32px; }
+}
+
+/* Laptop / small desktop */
+@media (min-width: 768px) and (max-width: 991px) {
+  .cards { grid-template-columns: repeat(5, 1fr); }
+  .overlay { padding: 28px; }
+  .item1-text2 { font-size: 34px; }
+  .nav-links { gap: 14px; }
+}
+
+/* Tablet */
+@media (min-width: 600px) and (max-width: 767px) {
+  .container { flex-wrap: wrap; justify-content: center; }
+  /* nav links wrap into multiple rows but remain horizontal within each row */
+  .nav-links {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .cards { grid-template-columns: repeat(4, 1fr); }
+  .card img { height: 200px; }
+  .overlay { padding: 22px; }
+  .item1-text2 { font-size: 30px; }
+}
+
+/* Mobile phones */
+@media (max-width: 599px) {
+  .container { width: calc(100% - 32px); flex-direction: column; align-items: center; gap: 14px; }
+  /* nav links stack vertically as rows (row-wise) */
+  .nav-links {
+    display: flex;
+    flex-direction:row;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+    margin-top: 12px;
+  }
+  /* .nav-links a { display: block; width: 100%; text-align:center; padding: 12px 10px; border-radius: 10px; margin-left: 10px; }
+
+  .hero-slider { min-height: 64vh; }
+  .overlay { padding: 18px; border-radius: 10px; width: 92%; }
+  .item1-text1 { font-size: 16px; }
+  .item1-text2 { font-size: 24px; }
+  .cards { grid-template-columns: repeat(1, 1fr); gap: 14px; }
+  .card img { height: 180px; }
+  .btn { padding: 10px 16px; }
+} */
+
+/* Accessibility focus */
+a:focus, button:focus { outline: 3px solid rgba(225,17,17,0.14); outline-offset: 2px; }
+
+/* Utility: ensure inline widths don't break layout (override) */
+.cards img[width], .card img[width] { width: 100% !important; height: auto; object-fit: cover; } 
+
+.scroll-text {
+  font-size: 20px;
+  font-weight: 600;
+  white-space: nowrap; /* keeps text in one line */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #fff;
+  background: linear-gradient(90deg, #ff416c, #ff4b2b);
+  padding: 10px 0;
+}
+
+/* Responsive for mobile */
+@media (max-width: 600px) {
+  .scroll-text {
+    font-size: 16px;
+    padding: 8px 0;
+  }
+}
