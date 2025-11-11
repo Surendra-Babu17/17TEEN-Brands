@@ -14,26 +14,29 @@
 
 
     <nav class="navbar">
-      <div class="container">
-        <a href="./index.html" class="logo" style="font-family: Georgia, 'Times New Roman', Times, serif; margin-left: 30px;"><span style="color: black;">17</span>TEEN
-          <span style="color: rgb(16, 14, 14);"> Brands</span></a>
+      <!-- inside <nav class="navbar"> -->
+<div class="container">
+  <a href="./index.html" class="logo" style="font-family: Georgia, 'Times New Roman', Times, serif; margin-left: 6px;">
+    <span style="color: black;">17</span>TEEN <span style="color: rgb(16,14,14);">Brands</span>
+  </a>
 
-        <ul class="nav-links" id="primary-navigation">
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="#our-products">Shop</a></li>
-          <li><a href="./about.html">About</a></li>
-          <li><a href="./touch.html">Contact</a></li>
-          <li><a href="#"><img src="./Project images/user.png" width="25" class="log" alt="user"></a></li>
-          <li>
-            <a href="./cart.html">
-              <img src="./Project images/grocery-store.png" width="25" class="log" alt="cart">
-              <ul id="cart-items"></ul>
+  <!-- ADD hamburger button -->
+  <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">☰</button>
 
-            </a>
-          </li>
+  <ul class="nav-links" id="primary-navigation">
+    <li><a href="./index.html">Home</a></li>
+    <li><a href="#our-products">Shop</a></li>
+    <li><a href="./about.html">About</a></li>
+    <li><a href="./touch.html">Contact</a></li>
+    <!-- <li><a href="#"><img src="./Project images/user.png" width="20px" class="log" alt="user"></a></li>
+    <li><a href="./cart.html"><img src="./Project images/grocery-store.png" width="25px" class="log" alt="cart"></a></li> -->
+    <li><a><img src="./Project images/user.png" style="width: 20px;" title="Login"></a></li>
+    <li><a><img src="./Project images/grocery-store.png" style="width: 20px;" title="Cart" ></a></li>
 
 
-      </div>
+  </ul>
+</div>
+
     </nav>
 
     <nav class="navbar2">
@@ -74,8 +77,8 @@
       <div class="cards" id="our-products">
         <div class="card" onclick="cart2()" data-id="1" data-name="Mens shirts" data-price="470"
           data-text="checkit cart">
-          <!-- <a href="./mens.html"> -->
-          <img src="./mens wear/m21.jpg" alt=""></a>
+        
+          <img src="./mens wear/m21.jpg" alt="">
           <h3>Mens Shirts</h3>
           <p class="price">₹470.00</p>
           <p>Lorem ipsum dolor sit amet...</p>
@@ -86,7 +89,7 @@
 
         <div class="card" onclick="cart3()">
           <!-- <a href="./mens.html"> -->
-          <img src="./mens wear/37.webp" alt=""></a>
+          <img src="./mens wear/37.webp" alt="">
           <h3>Men Pants</h3>
           <p class="price">₹470.00</p>
           <p>Lorem ipsum dolor sit amet...</p>
@@ -95,7 +98,7 @@
         </div>
         <div class="card" onclick="cart4()">
           <!-- <a href="./mens.html"> -->
-          <img src="./mens wear/t10.jpg" alt=""></a>
+          <img src="./mens wear/t10.jpg" alt="">
           <h3>Mens T-shirts</h3>
           <p class="price">₹470.00</p>
           <p>Lorem ipsum dolor sit amet...</p>
@@ -105,7 +108,7 @@
         </div>
         <div class="card" onclick="cart5()">
           <!-- <a href="./mens.html"> -->
-          <img src="./mens wear/w10.jpg" alt=""></a>
+          <img src="./mens wear/w10.jpg" alt="">
           <h3>MEN-Woodies</h3>
           <p class="price">₹470.00</p>
           <p>Lorem ipsum dolor sit amet...</p>
@@ -115,7 +118,7 @@
         </div>
         <div class="card" onclick="cart8()" id="cart1" style="size-adjust: initial;">
           <!-- <a href="./shoes.html"> -->
-          <img src="./shoes wear/images (1).jpeg" alt=""></a>
+          <img src="./shoes wear/images (1).jpeg" alt="">
           <h3>Mens-Shoes</h3>
           <p class="price">₹560.00</p>
           <p>Lorem ipsum dolor sit amet...</p>
@@ -133,7 +136,7 @@
         </div>
         <div class="card" onclick="cart11()">
 
-          <img src="./childwear/s20.webp" alt="" width="100px"></a>
+          <img src="./childwear/s20.webp" alt="" width="100px">
           <h3>Mens Fashions wears</h3>
           <p class="price">₹190.00</p>
           <p>Lorem ipsum dolor sit amet...</p>
@@ -146,7 +149,7 @@
         <!--WOMENS WEAR  -->
         <div class="card" onclick="cart13()">
           <!-- <a href="./women.html"> -->
-          <img src="./childwear/sr1.webp" alt=""></a>
+          <img src="./childwear/sr1.webp" alt="">
           <h3>Women Sarees</h3>
           <p class="price">₹340.00</p>
           <p>Lorem ipsum dolor sit amet...</p>
@@ -156,7 +159,7 @@
 
         <div class="card" onclick="cart14()">
           <!-- <a href="./jewellries.html"> -->
-          <img src="./childwear/wt1.webp" alt="" width="100px"></a>
+          <img src="./childwear/wt1.webp" alt="" width="100px">
           <h3>Women Kurta & Chudidar</h3>
           <p class="price">₹190.00</p>
           <p>Lorem ipsum dolor sit amet...</p>
@@ -166,7 +169,7 @@
 
         <div class="card" onclick="cart15()">
           <!-- <a href="./jacket.html"> -->
-          <img src="./childwear/wg1.webp" alt=""></a>
+          <img src="./childwear/wg1.webp" alt="">
           <h3>WOMEN T-shirts</h3>
           <p class="price">₹250.00</p>
           <p>Lorem ipsum dolor sit amet...</p>
@@ -175,7 +178,7 @@
         </div>
         <div class="card" onclick="cart16()">
           <!-- <a href="./jewellries.html"> -->
-          <img src="./childwear/c1.webp" alt="" width="100px"></a>
+          <img src="./childwear/c1.webp" alt="" width="100px">
           <h3>Women slipers& Flip flops</h3>
           <p class="price">₹190.00</p>
           <p>Lorem ipsum dolor sit amet...</p>
@@ -184,7 +187,7 @@
         </div>
         <div class="card" onclick="cart17()">
           <!-- <a href="./jewellries.html"> -->
-          <img src="./tshirts/images (2).jpeg" alt="" width="100px"></a>
+          <img src="./tshirts/images (2).jpeg" alt="" width="100px">
           <h3>T-shirts</h3>
           <p class="price">₹190.00</p>
           <p>Lorem ipsum dolor sit amet...</p>
@@ -212,7 +215,7 @@
             <li>Deliver stylish and comfortable clothing.</li><br>
             <li>Provide an easy shopping experience.</li><br>
             <li>Offer exclusive deals & offers.</li>
-          </ul>
+          </ul><br>
           <a class="btn" onclick="readmore()" >Read More</a>
         </div>
         <div class="image">
